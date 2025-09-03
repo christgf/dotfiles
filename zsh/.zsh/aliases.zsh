@@ -15,6 +15,7 @@ alias port='lsof -nP -i |grep LISTEN |grep' # sudo for ports < 1024 or procs you
 alias luuid='uuidgen | tr "[:upper:]" "[:lower:]"' # Lowercase UUIDv4. Use | pbcopy to add to clipboard.
 alias caffeinate='caffeinate -disu'
 alias stay='caffeinate -disu'
+alias rot13='tr "A-Za-z" "N-ZA-Mn-za-m"' # e.g. echo 'secretive' | rot13
 
 # +-------------------+
 # | date and calendar |
