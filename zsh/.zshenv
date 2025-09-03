@@ -36,8 +36,8 @@ export PATH="$PATH:$HOME/.local/bin"
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8) # Default SDK is v1.8
 export PATH="$PATH:$JAVA_HOME/bin"
 
-# PHP
-export PHP_PATH="/opt/homebrew/opt/php@7.4"
+# PHP 7.4 (via HOMEBREW)
+export PHP_PATH="$HOMEBREW_REPOSITORY/opt/php@7.4"
 export PATH="$PATH:$PHP_PATH/bin:$PHP_PATH/sbin"
 
 # Go
@@ -49,27 +49,20 @@ export RUSTUP_HOME="$HOME/rust/.rustup"
 export CARGO_HOME="$HOME/rust/.cargo"
 export PATH="$PATH:$CARGO_HOME/bin"
 
-# JetBrains Toolbox
-export JETBRAINS_TOOLBOX_SCRIPTS="/Users/G/Library/Application Support/JetBrains/Toolbox/scripts"
-export PATH="$PATH:$JETBRAINS_TOOLBOX_SCRIPTS"
-
-# AWS
-#
-# These could (should?) be overwritten by ~/.zsh/.zshrc or .aws/config.
-#export AWS_REGION=us-east-1
-#export AWS_ACCESS_KEY_ID=key
-#export AWS_SECRET_ACCESS_KEY=secret
+# JetBrains Toolbox Scripts
+export JETBRAINS_SCRIPTS="/Users/G/Library/Application Support/JetBrains/Toolbox/scripts"
+export PATH="$PATH:$JETBRAINS_SCRIPTS"
 
 # To use asdf, add the following line to your ~/.zshrc:
 #  . /opt/homebrew/opt/asdf/libexec/asdf.sh
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+#. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # Bun - Javascript
 #
 export BUN_INSTALL="$HOME/.bun" 
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# buf - https://buf.build/
+# buf (https://buf.build/) via go install
 #
-export BUF_EXECUTABLE="/Users/G/go/bin/buf"
+export BUF_EXECUTABLE="$(go env GOPATH)/bin/buf"
 
