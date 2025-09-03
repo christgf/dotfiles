@@ -15,9 +15,9 @@
 #
 function jenv() {
     if [[ $argv = *[!\ ]* ]]; then
-	export JAVA_HOME=$(/usr/libexec/java_home -v $argv);
-	export PATH=$JAVA_HOME/bin:$PATH;
-	launchctl setenv JAVA_HOME $JAVA_HOME;
+        export JAVA_HOME=$(/usr/libexec/java_home -v $argv);
+        export PATH=$JAVA_HOME/bin:$PATH;
+        launchctl setenv JAVA_HOME $JAVA_HOME;
     fi
     java -version;
 }
