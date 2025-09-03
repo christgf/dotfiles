@@ -2,12 +2,6 @@
 #
 # Functions and scripts.
 
-#################################
-#				#
-#	Java and the JDK	#
-#				#
-#################################
-
 # Switch between JDK runtimes.
 #
 # Provided a JDK version as an argument the function will set JAVA_HOME to the
