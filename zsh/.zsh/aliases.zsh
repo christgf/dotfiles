@@ -38,10 +38,10 @@ alias tglint='terragrunt hclfmt' # Equivalent to a recursive terraform fmt
 # +------------+
 # | Kubeconfig |
 # +------------+
-# e.g. alias todev='hash -r && export KUBECONFIG=~/.kube/dev.config'
+# e.g. alias ktodev='hash -r && export KUBECONFIG=~/.kube/dev.config'
 
-# +---------------------+
-# | Assume AWS IAM role |
-# +---------------------+
+# +------------------+
+# | AWS and AWS IAM  |
+# +------------------+
 #alias awsunset='unset AWS_SECRET_ACCESS_KEY; unset AWS_SESSION_TOKEN; unset AWS_SECURITY_TOKEN; unset ASSUMED_ROLE;'
 
